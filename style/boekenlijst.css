@@ -1,0 +1,8 @@
+body>section {
+  background-image: url(../img/strand.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+  width: 100%;
+}
