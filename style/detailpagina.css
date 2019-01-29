@@ -3,7 +3,7 @@ width: 100%;
 padding: 2em;
 display: grid;
 grid-template-columns: 50% 50%;
-grid-template-rows: 15% 15% 15% 15% 20% 20%;
+grid-template-rows: 15% 18% 20% 15% 20% 20%;
 grid-gap: 1em;
 
 }
@@ -11,6 +11,8 @@ grid-gap: 1em;
 main section div article > button {
   grid-row: 1;
   grid-column: 2;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 main section div article img {
   height: 75%;
@@ -25,9 +27,11 @@ main section div article div {
 }
 
 main section div article div h3 {
+  margin-top: 0;
   margin-left: 1.2em;
   font-size: 1.5em;
 }
+
 
 main section div article div p {
   margin: 1em;
@@ -92,7 +96,13 @@ main section div article div:nth-of-type(3) div i{
 main section div article div:nth-of-type(3) div i:first-child{
   margin-left: 1em;
 }
+main section >div {
+  height: 100%;
+}
 
+main section {
+  height: 80vh;
+}
 @media (max-width: 750px) {
   main section div article div h3 {
     font-size: 1em;
@@ -103,13 +113,11 @@ main section div article div:nth-of-type(3) div i:first-child{
   main section div article div p {
     font-size: 0.8em;
   }
-
-}
-@media (max-width: 500px) {
-
   main section div article img {
     height: 15em;
     width: 10em;
     margin: 1.5em;
   }
+  
+
 }

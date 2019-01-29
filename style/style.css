@@ -102,12 +102,12 @@ section h1 {
   color: white;
   font-weight: bold;
   opacity: 0.8;
-  max-width: 50%;
+  max-width: 27%;
 }
 
 
 section > img {
-  max-width: 10em;
+  max-width: 9em;
   width: 40%;
   margin-left: 5%;
 }
@@ -167,7 +167,8 @@ main section {
 }
 
 main section >div {
-  height: 100%;
+  position: relative;
+  height: 80%;
   width: 85%;
   margin-left: 8%;
   background-color: #FBF7F4;
@@ -184,15 +185,18 @@ section h2 {
   padding-bottom: 1em;
   color: #2800a0;
   font-size: 1.7em;
-  margin-left: 10%;
+  margin-left: 11%;
 }
 
 section div article {
   padding: 2em;
   padding-top: 0;
+  padding-bottom: 0;
 }
 
-section div article > button {
+section div article > button  {
+  position: absolute;
+    margin-top: 2%;
   border: none;
   height: 100px;
   width: 100px;
@@ -270,21 +274,22 @@ section div h3 {
 }
 
 section div article img {
+  margin-top: 15%;
   height: 20em;
   width: 15em;
   border-radius: 15px;
 }
 
-section div article img:hover {
+/* section div article img:hover {
   opacity: 0.8;
   transform: scale(1.1);
   transition: all 300ms;
-}
+} */
 
 section div a div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   margin-top: 1em;
 }
 
@@ -301,12 +306,19 @@ section div a div i:last-child {
 
 
 
-
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
 
 
 /* Responsive  -------------------------- */
 
 @media (max-width: 700px) {
+  section > h1 {
+    padding: 1%;
+    font-size: 1.25em;
+  }
   section div article img {
     height: 15em;
     width: 10em;
@@ -318,8 +330,17 @@ section div a div i:last-child {
     margin-left: 5%;
   }
   section h2 {
-    margin-left: 10%;
+    margin-left: 13%;
   }
+main section >div {
+  height: 100%;
+}
+main section {
+  height: 70vh;
+}
 
+body > section {
+  height: 20em;
+}
 
 }

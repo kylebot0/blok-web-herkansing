@@ -6,3 +6,14 @@ body>section {
   height: 30em;
   width: 100%;
 }
+
+@media (max-width: 650px) {
+  body>section {
+    height: 25em;
+  }
+
+  section {
+    padding-top: 0;
+  }
+
+}
